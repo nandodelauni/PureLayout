@@ -1,6 +1,6 @@
 //
 //  NSArray+PureLayout.h
-//  v2.0.0
+//  v2.0.4
 //  https://github.com/smileyborg/PureLayout
 //
 //  Copyright (c) 2012 Richard Turton
@@ -48,12 +48,12 @@
 /** Deactivates the constraints in this array. */
 - (void)autoRemoveConstraints;
 
-#if __PureLayout_MinBaseSDK_iOS8
+#if __PureLayout_MinBaseSDK_iOS_8_0
 
-/** Sets the string as the identifier for the constraints in this array. Available in iOS 7.0 and later. */
+/** Sets the string as the identifier for the constraints in this array. Available in iOS 7.0 and OS X 10.9 and later. */
 - (instancetype)autoIdentifyConstraints:(NSString *)identifer;
 
-#endif /* __PureLayout_MinBaseSDK_iOS8 */
+#endif /* __PureLayout_MinBaseSDK_iOS_8_0 */
 
 
 #pragma mark Array of Views
@@ -69,6 +69,9 @@
 
 /** Sets the given dimension of all the views in this array to a given size. */
 - (NSArray *)autoSetViewsDimension:(ALDimension)dimension toSize:(CGFloat)size;
+
+/** Sets all of the views in this array to a given size. */
+- (NSArray *)autoSetViewsDimensionsToSize:(CGSize)size;
 
 
 /** Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (variable) in the dimension along the axis and will have spacing (fixed) between them. */

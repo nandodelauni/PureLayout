@@ -7,9 +7,6 @@
 //
 
 #import "ALiOSDemoListController.h"
-#import "ALiOSDemo1ViewController.h"
-#import "ALiOSDemo2ViewController.h"
-#import "ALiOSDemo3ViewController.h"
 
 @interface ALiOSDemoListController ()
 
@@ -37,7 +34,8 @@
              @"Priorities & Inequalities", // Demo 6
              @"Animating Constraints", // Demo 7
              @"Constraint Identifiers (iOS 7.0+)", // Demo 8
-             @"Layout Margins (iOS 8.0+)" // Demo 9
+             @"Layout Margins (iOS 8.0+)", // Demo 9
+             @"Constraints Without Installing" // Demo 10
              ];
 }
 
